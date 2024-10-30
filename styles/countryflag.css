@@ -1,0 +1,57 @@
+/**
+ * countryflag wrapper
+ */
+div#countryflag {
+  padding: 2px;
+  text-align: center;
+}
+/**
+ * city name
+ */
+div#countryflag strong {
+  text-transform: none;
+  font-style: normal;
+  letter-spacing: 0;
+  padding: 0;
+  margin: 0;
+}
+/**
+ * the flag
+ */
+div#countryflag img {
+  width: 140px;
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+/**
+ * wikipedia dn google maps link
+ */
+div#countryflag a:link, div#countryflag a:active, div#countryflag a:visited {
+  font-weight: bold;
+  text-transform: none;
+  text-decoration: underline;
+  font-style: normal;
+  font-size: 11px;
+  padding: 0;
+  margin: 0;
+}
+div#countryflag a:hover {
+  text-decoration: none;
+}
+/**
+ * countryflag footer
+ */
+div#countryflag small, div#countryflag small a:link, div#countryflag small a:active, div#countryflag small a:visited, div#countryflag small a:hover {
+  font-family: Arial, sans-serif;
+  letter-spacing: 0;
+  text-decoration: none;
+  color: #aaa;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  font-weight: normal;
+  text-transform: none;
+  font-style: normal;
+  font-size: 10px;
+}

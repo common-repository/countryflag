@@ -1,0 +1,4 @@
+/**
+ * countryflag.js - Countryflag Wordpress Plugin <http://www.teledir.de/wordpress-plugins>
+ */
+(function(A){if(typeof (geoip_country_code)=="function"){var B=geoip_country_code().toLowerCase();if(B.length>0){var C='<a href="http://www.teledir.de/wordpress-plugins#countryflag" target="_blank"><img src="'+A.url+"/img/flags/"+B+'.png" border="0" /></a><br /><strong>'+geoip_city()+"</strong>";if(A.wikipedia.length>0||A.maps.length>0){C+="<br />";if(A.wikipedia.length>0){C+='<a href="'+A.wikipedia+"/wiki/"+escape(geoip_city())+'" target="_blank" title="Wikipedia">Wikipedia</a> '}if(A.maps.length>0){C+='<a href="'+A.maps+geoip_city()+'" target="_blank" title="Google Maps">Map</a>'}}}}else{C='<a href="http://www.teledir.de/wordpress-plugins#countryflag" target="_blank"><img src="'+A.url+'/img/flags/unknowen.png" border="0" /></a>'}document.write(C)})(window.countryflag||{url:"",maps:"http://maps.google.com/maps?q=",wikipedia:"http://en.wikipedia.org"});
